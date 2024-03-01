@@ -42,3 +42,18 @@ describe('subtractionNumbers', () => {
         expect(subtractionNumbers(11, 0)).toBe(11)
     })
 })
+
+describe('multiplyNumbers', () => {
+    test('should return multiply numbers', () => {
+        expect(multiplyNumbers(1, 10)).toBe(10)
+    })
+    test('should return multiply numbers', () => {
+        expect(multiplyNumbers(1, 1)).toBe(1)
+    })
+    test('should return multiply numbers', () => {
+        expect(multiplyNumbers(3, 10)).toBe(30)
+    })
+    test('should return multiply numbers', () => {
+        expect(multiplyNumbers(1, 2)).toBe(2)
+    })
+})

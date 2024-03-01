@@ -5,3 +5,7 @@ export function sumNumbers(a, b) {
 export function subtractionNumbers(a, b) {
     return Number(a) - Number(b)
 }
+
+export function multiplyNumbers(a, b) {
+    return Number(a) * Number(b)
+}
