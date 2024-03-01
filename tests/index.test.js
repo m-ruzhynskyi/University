@@ -57,3 +57,18 @@ describe('multiplyNumbers', () => {
         expect(multiplyNumbers(1, 2)).toBe(2)
     })
 })
+
+describe('divideNumbers', () => {
+    test('should return divide numbers', () => {
+        expect(divideNumbers(10, 2)).toBe(5)
+    })
+    test('should return divide numbers', () => {
+        expect(divideNumbers(2, 1)).toBe(2)
+    })
+    test('should return divide numbers', () => {
+        expect(divideNumbers(100, 2)).toBe(50)
+    })
+    test('should return divide numbers', () => {
+        expect(divideNumbers(1, 2)).toBe(0.5)
+    })
+})
