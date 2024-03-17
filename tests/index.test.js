@@ -1,5 +1,5 @@
 import {describe, test, expect} from "vitest";
-import {divideNumbers, multiplyNumbers, subtractionNumbers, sumNumbers} from "../calculator";
+import {calculatePower, divideNumbers, multiplyNumbers, subtractionNumbers, sumNumbers} from "../calculator";
 
 describe('sumNumbers', () => {
     test('should return sum of two numbers ', () => {
@@ -24,7 +24,6 @@ describe('sumNumbers', () => {
     })
     test('should return sum of two numbers ', () => {
         expect(sumNumbers(0, 5)).toBe(5)
-
     })
 })
 
@@ -71,4 +70,22 @@ describe('divideNumbers', () => {
     test('should return divide numbers', () => {
         expect(divideNumbers(1, 2)).toBe(0.5)
     })
+    test('should return error ', () => {
+        expect(divideNumbers(5, 0)).toThrowError('Division by zero is not allowed')
+    })
 })
+
+describe('calculatePower', ()=>{
+   test('should return power', () => {
+       expect(calculatePower(2,2)).toBe(4);
+   });
+   test('should return power', () => {
+       expect(calculatePower(3,2)).toBe(9);
+   });
+   test('should return power', () => {
+       expect(calculatePower(4,2)).toBe(16);
+   });
+   test('should return error', () => {
+       expect(calculatePower(0, 0)).toThrowError('Undefined value: 0^0');
+   });
+});
